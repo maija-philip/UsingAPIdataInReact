@@ -1,0 +1,310 @@
+
+/* creating my color variables */
+:root {
+  --white: #F7F7F7;
+  --grey: #EDEDED;
+  --black: #020E26;
+  --theme: #be4f00;
+  --theme-light: #EDEDED;
+
+  /* form error colors */
+  --error-red: #b8001f;
+  --error-pink: #ffccd5;
+}
+
+
+/* ******** SET UP PAGE ******* */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 0.25s;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+/* Text formatting */
+p, a, figcaption, input, button, div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: var(--black);
+  line-height: 1.75em;
+}
+
+a {transition: all 0.25s linear; color: var(--theme);}
+a:hover {color: var(--grey);}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--black);
+  font-size: 5em;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--theme);
+  font-size: 3em;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.75em;
+}
+
+
+section {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10em;
+}
+
+#footer {
+  text-align: center;
+  padding: 1em;
+}
+/* ******** NAV + HEADER + ABOUT ******* */
+
+nav {
+  width: 100%;
+  background-color: var(--theme-light);
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 40% auto;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+nav div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+nav a {
+  text-align: right;
+  color: var(--black);
+  text-decoration: none;
+  margin: auto 1em;
+}
+#ritname {
+  text-align: left;
+  font-weight: bold;
+  color: var(--theme);
+}
+nav a:hover {
+  font-weight: bold;
+  color: var(--theme);
+  transform: rotate(-5deg);
+}
+
+header {
+  height: 33em;
+  background-color: var(--theme-light);
+  padding: 2em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.quoteBubble{
+  border-left: 1em solid var(--theme-light);
+  width: calc(100% - 1em);
+  padding: 1em;
+  font-style: italic;
+}
+
+/* ******** Degrees ******* */
+.degreeAccordian {
+  background-color: var(--grey) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.degreeAccordianData {
+  background-color: var(--white);
+  text-align: left;
+  /* border-top: 1px solid rgb(218, 218, 218); */
+}
+
+.extraSpace {
+  margin-top: 2em !important;
+}
+
+.courseModalButton {
+  font-size: 1em !important;
+  color: var(--theme) !important;
+  text-transform: capitalize !important;
+  font-weight: normal !important;
+  background-color: var(--grey) !important;
+}
+.courseModalButton:hover {
+  background-color: #cbcbcb !important;
+}
+
+
+/* ******** Minors ******* */
+
+.minorModalButton {
+  background-color: var(--theme-light) !important;
+  width: 13em !important;
+  height: 13em !important;
+  margin: 1em !important;
+  padding: 2em !important;
+  font-size: 0.9em !important;
+  color: var(--black) !important;
+  text-transform: capitalize !important;
+  font-weight: normal !important;
+}
+.minorModalButton:hover {
+  background-color: #cbcbcb !important;
+  font-weight: bold !important;
+}
+
+.space {
+  margin: 1em auto !important;
+}
+
+.classChip {
+  margin: 0.2em !important;
+}
+.filled {
+  background-color: var(--theme) !important;
+  color: var(--white) !important;
+}
+
+.classBlock {
+  background-color: var(--grey);
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* ******** Employment ******* */
+.orange {
+  color: var(--theme);
+}
+
+.employerBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+.employer{
+  display: block;
+  margin: auto;
+  border: none;
+  width: 10em !important;
+  height: 10em !important;
+  font-size: 1em !important;
+}
+.employer:hover {
+  background-color: var(--theme-light) !important;
+  font-weight: normal !important;
+}
+
+.css-1usso8h-MuiDataGrid-root {
+  border-color: var(--theme-light) !important;
+}
+
+
+
+
+/* ******** PEOPLE ******* */
+.spaceBelow {margin-bottom: 4em;}
+
+.peopleTab {
+  width: 100vw;
+  margin-left: -15vw !important;
+  margin-top: -14px !important;
+  background-color: var(--grey) !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  
+}
+
+.peopleBox, .minorBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.peopleCard {
+  max-width: 10em;
+  margin: 2em;
+  padding: 1em;
+}
+
+.peopleCard img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  margin: -1em auto auto -1em;
+  border-radius: 0.25em;
+}
+
+.peopleCard h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+.peopleModalButton {
+  text-transform: capitalize !important;
+  font-size: 1.5em !important;
+  font-weight: normal !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.5em !important;
+  color: var(--black) !important;
+}
+
+.peopleModalBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1em;
+  
+}
+.peopleModalBox h2 {font-size: 2em; margin: 0;}
+.peopleModalBox h3 {font-size: 1.25em; margin: 0;}
+.peopleModalBox p {margin: 0;}
+.peopleModalBox a {display: block;}
+.peopleModalBox img {width: 100%;}
+
+.peopleModalBox #interest {margin: 1.5em auto;}
+
+/* ******** MEDIA QUERIES ******* */
+@media screen and (max-width: 700px) {
+  nav div {
+    flex-direction: column;
+  }
+ 
+  header h1 {font-size: 3em;}
+  h2 {font-size: 2em;}
+  h3 {font-size: 1.25em;}
+}
+
